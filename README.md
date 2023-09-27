@@ -10,11 +10,13 @@ Arquivos
 
 Instrucoes:
 
-1) Instalar/Importar os seguintes modulos:
+1) Criar ambiente virtual 'venv_ada'
+
+2) Instalar/Importar os seguintes modulos:
 - requests
 - urllib3
 - re
 - validate_docbr / import CPF
 - datetime / import datetime
 
-2) Rodar o arquivo principal (main.py) e seguir as opções do menu!
+3) Rodar o arquivo principal (main.py) e seguir as opções do menu!
