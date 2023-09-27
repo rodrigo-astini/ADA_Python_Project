@@ -13,7 +13,6 @@ def valida_padrao_cpf(cpf_input):
         padrao_cpf = r'^\d{3}\.\d{3}\.\d{3}-\d{2}$'
         cpf_input = re.sub('[-.]','', cpf_input)
         cpf_input = f'{cpf_input[:3]}.{cpf_input[3:6]}.{cpf_input[6:9]}-{cpf_input[9:]}'
-        #print (cpf_input)
         if re.match(padrao_cpf,cpf_input):
             return(cpf_input)
         else:
@@ -23,7 +22,6 @@ def valida_cpf(cpf_input):
     cpf_valido = False
     cpf_original = cpf_input
     cpf_input = re.sub('[-.]', '',cpf_input)
-    #resultado = cpf.validate(cpf_input)
     while cpf_valido == False:
         cpf = CPF()
         cpf_valido = cpf.validate(cpf_input)
@@ -33,7 +31,6 @@ def valida_cpf(cpf_input):
             cpf_input = input("\nCPF inválido. Por favor informe um CPF válido no formato XXX.XXX.XXX-XX: ")
 
 def valida_rg(rg_input):
-    #RG - exemplo: 11.111.111.-x
     padrao_rg = r'^\d{2}\.\d{3}\.\d{3}-[0-9A-Za-z]$'
     while True:
         rg_input = re.sub('[-.]','', rg_input)
@@ -49,10 +46,7 @@ def valida_nascimento():
         try:
             data_convertida = datetime.strptime(data_nascimento_input, '%d/%m/%Y').date()
             data_atual = datetime.now().date()
-    
-            # Verificacao se data pode ser aceita, inferior à data atual
             if data_convertida < data_atual:
-                #return data_convertida.strftime("%d/%m/%Y")
                 return data_convertida.strftime("%Y/%m/%d")
             else:
                 print("Data inválida. Data deve ser anterior à data atual. ")
@@ -64,12 +58,8 @@ def valida_cep(cep_input):
     while True:
         url = f'https://viacep.com.br/ws/{cep_input}/json/'
         response = requests.get(url, verify=False)
-        #print(url)
-        #print(response)
-
         if response.status_code == 200:
             data = response.json()
-
             endereco = {
                 "CEP": data['cep'],
                 "Logradouro": data['logradouro'],
