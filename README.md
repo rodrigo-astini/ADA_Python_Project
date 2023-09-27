@@ -2,7 +2,7 @@
 Entrega do Trabalho do Curso de Python - ADA SkillUp
 
 Arquivos
-- NucleaFinance.py (programa inicial que chama o Menu Principal)
+- main.py (programa inicial que chama o Menu Principal)
 - defs.py (funções para todas as opções de menu cliente)
 - utils.py (funções para validação de dados de input e limpaTela)
 - db_connection.py (funções para conexão e interação com Bando de Dados SQL) 
@@ -17,4 +17,4 @@ Instrucoes:
 - validate_docbr / import CPF
 - datetime / import datetime
 
-2) Rodar o arquivo principal (main) chamado NucleaFinance.py e seguir as opcoes do menu!
+2) Rodar o arquivo principal (main.py) e seguir as opções do menu!
