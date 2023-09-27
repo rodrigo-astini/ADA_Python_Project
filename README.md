@@ -2,10 +2,10 @@
 Entrega do Trabalho do Curso de Python - ADA SkillUp
 
 Arquivos
-NucleaFinance.py (programa inicial que chama o Menu Principal)
-defs.py (funções para todas as opções de menu cliente)
-utils.py (funções para validação de dados de input e limpaTela)
-SQL_Create_Client_Table.sql (Script para criação da Tabela Clientes no SQL)
+- NucleaFinance.py (programa inicial que chama o Menu Principal)
+- defs.py (funções para todas as opções de menu cliente)
+- utils.py (funções para validação de dados de input e limpaTela)
+- SQL_Create_Client_Table.sql (Script para criação da Tabela Clientes no SQL)
 
 Instrucoes:
 
